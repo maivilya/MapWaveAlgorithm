@@ -1,6 +1,5 @@
 package Lesson5;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -9,7 +8,7 @@ public class Main {
         int[][] map = getMap();
         System.out.println(mapToString(map));
         int[] start = getPoint2D(1,4);
-        WaveAlgorithm(map, start);
+        waveAlgorithm(map, start);
         System.out.println(mapToString(map));
     }
 
@@ -57,7 +56,7 @@ public class Main {
         return sb.toString();
     }
 
-    public static void WaveAlgorithm(int[][] map, int[] start) {
+    public static void waveAlgorithm(int[][] map, int[] start) {
 
         Queue<int[]> queue = new LinkedList<int[]>();
         queue.add(start);
